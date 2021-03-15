@@ -20,6 +20,7 @@ main(List<String> args) {
    names = Set<String>.from(names).toList();
    //change
 
+
   //  3.映射map(类似iOS字典)
   var info = {'name' : 'why', 
   'age' : 18

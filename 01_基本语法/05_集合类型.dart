@@ -18,6 +18,7 @@ main(List<String> args) {
    */
   // names = Set.from(names).toList();//'List<dynamic>' is not a subtype of type 'List<String>'  Set是个泛型，需给个确定的类型
    names = Set<String>.from(names).toList();
+   //change
 
   //  3.映射map(类似iOS字典)
   var info = {'name' : 'why', 

@@ -17,6 +17,7 @@ main(List<String> args) {
    * .from返回的是set，.toList转成List
    */
   // names = Set.from(names).toList();//'List<dynamic>' is not a subtype of type 'List<String>'  Set是个泛型，需给个确定的类型
+  // 测试
    names = Set<String>.from(names).toList();
 
   //  3.映射map(类似iOS字典)

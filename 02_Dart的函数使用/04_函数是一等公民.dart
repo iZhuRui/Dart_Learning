@@ -25,7 +25,7 @@ void test2(int foo(int num1, int num2)){
   foo(20, 30);
 }
 
-//  test2函数可读性不高，可改成一下写法
+//  test2函数可读性不高，可改成以下写法
 typedef Calculate = int Function(int num1, int num2);
 
 void test3(Calculate cal){

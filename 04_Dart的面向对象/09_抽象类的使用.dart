@@ -30,7 +30,6 @@ abstract class Shape {
 class Rectangle extends Shape {
   @override
   int getArea() {
-    // TODO: implement getArea
     return 100;
   }
 }

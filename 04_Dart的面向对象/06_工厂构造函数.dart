@@ -2,7 +2,7 @@ main(List<String> args) {
   //  需求：传入相同的name，那么返回的对象是同一个，传入color是相同时，返回的是同一个对象
 
   // final p1 = Person('jack');
-  final p1 = Person.withName('jack');
+  final p1 = Person.withName('jack');//使用final是为了保证更安全，后期不会指向别的对象
   // final p2 = Person('jack');
   final p2 = Person.withName('jack');
 
@@ -19,6 +19,9 @@ main(List<String> args) {
 //   const Person(this.color);
 // }
 
+//  普通构造函数：会自动返回创建出来的对象，不能手动的返回
+//  工厂构造函数最大的特点：可以手动的返回一个对象
+//  工厂构造函数会多占内存，但是减少多次创建对象的创建和销毁的过程；整体上是节省内存
 class Person {
   String name;
   String color;
@@ -33,7 +36,7 @@ class Person {
       return _nameCache[name];
     }else {
       final p = Person(name, 'default');
-      _nameCache[name] = p;
+      _nameCache[name] = p;//创建的对象保存在里面，本质上是保存的指针
       return p;
     }
   }

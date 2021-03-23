@@ -1,0 +1,9 @@
+# 运行：flutter pub get
+name: zr
+description: a dart library
+dependencies:
+  # http: ^0.13.1
+  # 出现Because zr depends on http >=0.13.0-nullsafety.0 which requires SDK version >=2.12.0-0 <3.0.0, version solving failed.
+  # 把版本号改成any，再flutter pub get后，在pubspec.lock中找到对应的库，查看版本号，再回到此处把any修改成该版本号
+
+  http: ^0.12.2
